@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
+
+
+ /*  Tipografias para todo el documento  */
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 430;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+/*  Background-color general de todo el sitio  */
+body{
+    background-color: #ddf6f2;   
+}
+
+/*  Header */
+.header{
+    position: fixed;
+    background-color: #ffffff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    width: 80%;
+    padding: 5px 10%;
+}
+
+/*Logo en header y en footer*/
+.header .logo-header img,
+.contenedor-footer .logo-footer img {
+    height: 110px;
+    transition: all 0.9s;
+}
+
+.header .logo-header img:hover,
+.contenedor-footer .logo-footer img{
+    transform: scale(1.2);
+}
+
+.logo-header a,
+.logo-footer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.logo-header a :hover,
+.logo-footer a :hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-header img,
+.logo-footer img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.9s;
+}
+
+.logo-header img:hover,
+.logo-footer img:hover{
+    transform: scale(1.2);
+}
+
+
+/*Estilos para btn de "Turnos online*/
+.btn{
+    border: 2px solid #43a19e;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #43a19e;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover{
+    background-color: #43a19e;
+    color: #ffffff;
+}
+
+
+/*  nav */
+.nav{
+    background-color: #43a19e;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav_ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav_li{
+    display: inline-block;
+    padding: 15px;
+    color: #43a19e;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.nav_li:hover > a {
+    color: #43a19e;
+    transition: all 0.6s;
+
+}
+.nav_li a{
+    color: #273739;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 5px;
+}
+.nav_li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+/*  Contenedor imagenes proximo carrusel  */
+.caja{
+    justify-content: center;
+    display: flex;
+}
+
+/*  estilos imágenes  */
+.caja img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*    Estilos al contenedor del mapa     */
+.mapa{
+    margin: 40px;
+}
+
+/*    Footer     */
+.contenedor-footer{
+    background-color: #ffffff;
+    display:flex;
+    align-items: center;
+    height: 130px;
+    padding: 5px 10%;
+}
+
+.footer-li a{
+    color: #273739;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.footer-li{
+    display: inline-block;
+    padding: 15px;
+    color: #273739;
+
+}
+
+/* Esta parte son las 4 imagenes, la idea es poner un titulo y una breve descripcion y en todo caso que te redireccione a otro sitio/pagina */
+.contenedor-imagenes{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-carrousel{
+    margin: 15px;
+    width: 350px;
+}
+
+/*Boton de whatsapp fijo  */
+.float{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999;
+}
+.fa-whatsapp{
+    font-size: 52px;
+}
+.float:hover{
+    background-color: #27f472;
+}
+
+
+
+/*No se si el carrusel de imagenes iria dentro de HEADER o por fuera */
+/* Es buena practica aplicar las tipografias con "*" ? */
+/*Tarda un poco en cargar el sitio. Creo que la calidad de las imagenes es muy alta. Son de "UNSPLASH" Hay otro sitio en donde descargar para recomendarme? */
+
