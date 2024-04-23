@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
+
+
+ /*  Tipografias para todo el documento  */
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 430;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  /*  Background-color general de todo el sitio  */
+body{
+    background-color: #ddf6f2;
+    
+}
+
+/*  Header / navbar  */
+.header{
+    background-color: #ffffff;
+    display:flex;
+    align-items: center;
+    height: 130px;
+    padding: 5px 10%;
+}
+.header .logo img{
+    height: 110px;
+    transition: all 0.9s;
+
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+.nav{
+    background-color: #43a19e;
+}
+.nav_li{
+    display: inline-block;
+    padding: 15px;
+    color: #273739;
+}
+.nav_li:hover > a {
+    color: #00C2CB;
+    transition: all 0.6s;
+
+}
+.nav_li a{
+    color: #273739;
+    text-decoration: none;
+    margin-right: 40px;
+}
+.nav_li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+/*  Contenedor imagenes proximo carrusel  */
+.caja{
+    justify-content: center;
+    display: flex;
+}
+/*  horrible como me quedo la imagen toda aplastada  */
+.caja img{
+    width: 100%;
+    height: 580px;
+    display: block;
+}
+
+
+/*    Estilos al contenedor del mapa     */
+.mapa{
+    margin: 40px;
+}
+
+/*    Footer     */
+.contenedor-footer{
+    background-color: #ffffff;
+    display:flex;
+    align-items: center;
+    height: 200px;
+    padding: 5px 10%;
+    
+    margin-top: 5px;
+
+}
+.footer-li a{
+    color: #273739;
+    text-decoration: none;
+    margin-right: 40px;
+}
+.footer-li{
+    display: inline-block;
+    padding: 15px;
+    color: #273739;
+
+}
+.contenedor-footer a{
+    color:black;
+    font-family: "Open Sans", sans-serif;
+}
+.contenedor-footer div{
+    width: 25%;
+    height: auto;
+    font-size: .9em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+   
+    
+
+.contenedor-footer img{
+    width: 100px;
+     height: 100px;
+    transition: all 0.9s;}
+.contenedor-footer img:hover{
+        transform: scale(1.2);}
+/* Esta parte son las 4 imagenes, la idea es poner un titulo y una breve descripcion y en todo caso que te redireccione a otro sitio/pagina */
+.contenedor-imagenes{
+    justify-content: center;
+    display: flex;
+}
+.imgg{
+    margin: 15px;
+    width: 350px;
+}
+/*Boton de whatsapp fijo  */
+.float{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999;
+}
+.fa-whatsapp{
+    font-size: 52px;
+}
+.float:hover{
+    background-color: #27f472;
+}
+
+/*No se si el carrusel de imagenes iria dentro de HEADER o por fuera */
+/* Es buena practica aplicar las tipografias con "*" ? */
+/*Tarda un poco en cargar el sitio. Creo que la calidad de las imagenes es muy alta. 
+Son de "UNSPLASH" Hay otro sitio en donde descargar para recomendarme? */
+
+/* Agregados para el formulario */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.registro label{
+    font-weight: bold;
+    width:300px ;
+    margin-right: 25px;
+    padding: 5px;
+
+}
+
+
+#btnform{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 15px;
+
+}
+#btnform:hover{
+    background-color: #ddf6f2;
+}
+/*nuevo footer con iconos redes sociales 
+subdividido en 3 div para poner otros datos importantes
+*/

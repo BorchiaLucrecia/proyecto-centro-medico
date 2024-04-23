@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/proyectoconsultoriomedico/styles/estilos.css">
+    <link rel="icon" href="./images/icono-logo-solapa.png">
+    <script src="https://kit.fontawesome.com/8acd87fd5f.js" crossorigin="anonymous"></script>
+    <title>Autogestion - Login</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../images/vitalidad2.png" alt="logo de la clinica">
+        </div>
+        <nav>
+            <ul class="nav_ul">
+                <li class="nav_li"><i class="fa-solid fa-house-medical"></i><a href="/">Inicio</a></li>
+                <li class="nav_li"><i class="fa-solid fa-building-columns"></i><a href="#">Institucional</a></li>
+                <li class="nav_li"><i class="fa-solid fa-stethoscope"></i><a href="#">Profesionales</a></li>
+                <li class="nav_li"><i class="fa-solid fa-desktop"></i><a href="#">Autogestión</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button class="button1">Turnos Online</button></a>
+    </header>
+    <main>
+        <section>
+            <div class="formulario">
+                <h3 align:center>Ingreso Pacientes Nuevos</h3>
+                <div class="registro">
+                    <form action="show_data.html" target="_blank"><!--mostrardatosform.html-->
+                        <fieldset>
+
+                            <legend>Datos personales </legend>
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" name="Nombre" placeholder="Nombre"><br><br>
+                            <label for="Apellido">Apellido</label>
+                            <input name="Apellido" type="text" placeholder="Apellido"><br><br>
+                            <label for="Correo">E-Mail</label>
+                            <input type="email" name="Correo" placeholder="E-Mail"><br><br>
+
+                            <label for="Pass">Password</label>
+                            <input type="password" name="Pass" placeholder="Ingrese Password">
+
+                        </fieldset>
+                        <p>Género (Seleccione)
+                            <input type="radio" name="gender" value="hombre" checked>Hombre
+                            <input type="radio" name="gender" value="Mujer">Mujer
+                            <input type="radio" name="gender" value="Adolecente"> Adolecente
+                            <input type="radio" name="gender" value="Niño"> Niño
+                        </p>
+                        <fieldset>
+                            <legend>Motivos Consulta</legend>
+                            <label for="estudios">Especialidad: (Seleccione)</label>
+                            <select id="estudios" name="estudios">
+                                <option value="Clinica">Clinica</option>
+                                <option value="Analisis">Analisis Clinicos</option>
+                                <option value="Pediatra">Pediatra</option>
+                                <option value="Odontologia">Odontologia</option>
+                                <option value="Ginecologia">Ginecologia</option>
+                                <option value="Oftalmologia">Oftalmologia</option>
+                                <option value="Traumatologia">Traumatologia</option>
+                                <option value="Fisiterapia">Fisioterapia</option>
+                                <option value="Fonoaudiologo">Fonoaudiologo</option>
+                                <option value="Psicologia">Psicologia</option>
+
+
+                            </select>
+                            <br>
+                            <p> Estudios Previos: Selecione <br>
+                                <input type="checkbox" name="Radiografias" value="Radiografias"> Radiografias
+                                <input type="checkbox" name="Analisis Clinicos" value="Analisis Clinicos"> Analisis
+                                Clinicos
+                                <input type="checkbox" name="Electrocardiogramas" value="Electrocardiogramas">
+                                Electrocardiogramas
+                                <input type="checkbox" name="Resonancia Magentica" value="Resonancia Magentica">
+                                Resonancia Magnetica
+                                <input type="checkbox" name="Otras Especialidades" value="Otras Especialidades"> Otras
+                                Especialiddades
+
+                            </p>
+
+                            <label for="comentarios">Comentarios:</label> <br>
+                            <textarea name="comentarios" rows="10" cols="80"></textarea>
+                            <br>
+                        </fieldset>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Otras Consultas</legend>
+                            <label for="turno">Obra Social </label>
+                            <select name="turno" id="">
+                                <option value="Pami">Pami</option>
+                                <option value="Sancor Salud">Sancor Salud</option>
+                                <option value="Medife" selected="True">Medife</option>
+                                <option value="Otras" seldected="True">Otras </option>
+
+                            </select>
+
+
+                        </fieldset>
+                        <button id="btnform" type="submit">Enviar Datos</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="contenedor-footer">
+        <div class="logo">
+            <img src="../images/vitalidad2.png" alt="logo de la clinica">
+        </div>
+        
+            <div>
+                <ul class="footer-ul">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"> Facebook</i></a><br><br>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a><br><br>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"> X</i></a><br><br>
+                    <a href="tel:5493876849616"><i class="fa-solid fa-phone"></i>Telefono</a><br><br>
+                    <a href="mailto:ejemplo@gmail.com"><i class="fa-solid fa-envelope"> E-Mail</i></a><br><br>
+                </ul>
+            </div>
+            <div >
+                <ul class="nav_ul">
+                    <li class="nav_li"><i class="fa-solid fa-house-medical"></i><a
+                            href="/proyectoconsultoriomedico/index.html">Inicio</a></li>
+                    <li class="nav_li"><i class="fa-solid fa-building-columns"></i><a href="#">Institucional</a></li>
+                    <li class="nav_li"><i class="fa-solid fa-stethoscope"></i><a href="#">Profesionales</a></li>
+                    <li class="nav_li"><i class="fa-solid fa-desktop"></i><a href="#">Autogestión</a></li>
+                    <li class="nav_li"><i class="fa-solid fa-hospital-user"></i><a href="#">Pacientes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Horarios de Atencion</h4>
+                <p>Lunes a Viernes:08:00 a 21:00Hs</p>
+                <p>Sabados: 09:30 a 13:30hs</p>
+
+
+            </div>
+        
+    </footer>
+</body>
+
+</html>
