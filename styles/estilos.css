@@ -149,6 +149,22 @@ body{
     padding: 5px 10%;
 }
 
+.section-f {
+    padding: 5px 10%;
+    
+} 
+
+.section-f a{
+    text-decoration: none;
+    color: black;
+}
+
+.section-f a:hover {
+    color: #43a19e;
+    transition: all 0.6s;
+
+}
+
 .footer-li a{
     color: #273739;
     text-decoration: none;
