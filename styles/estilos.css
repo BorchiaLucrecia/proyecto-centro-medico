@@ -1,33 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
 
  /*  Tipografias para todo el documento  */
- body{
+ body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 430;
     font-style: normal;
     font-variation-settings:"wdth" 100;
     font-size: 16px;
-    background-color: #ddf6f2;   
-
-}
-/*  Background-color general de todo el sitio  */
-body{
-    background-color: #ddf6f2;   
+    background: rgb(198,255,241);
+    background: linear-gradient(0deg, rgba(198,255,241,1) 23%, rgba(106,223,192,1) 53%, rgba(78,186,160,1) 85%);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 /*  Header */
-.header{
-    position: absolute;
+.header {
     background-color: #ffffff;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     height: 200px;
     width: 100%;
     z-index: 1000;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
-
 /*Logo en header y en footer*/
 .logo-header img {
     height: 165px;
@@ -87,7 +86,7 @@ body{
 
 .block {
     display: flex;
-    background-color: #43a19e;
+    background-color: #FFF;
     padding: 10px;
     margin-top: 45px;
     border-radius: 25px;
@@ -97,58 +96,24 @@ body{
     width: 35%;
     height: auto;
     border-radius: 25px;
-    margin-right: 5%;
+    margin-right: 2%;
     padding: 15px;
 }
 
 .block p, .formulario {
-    color: #fff;
+    color: #273739;
     border-radius: 25px;
     font-size: larger;
     text-align: justify;
 }
 .block p {
     flex: 1;
-    color: #fff;
+    color: #273739;
     border-radius: 25px;
     font-size: 16px large;
     margin-right: 5%;
     padding: 50px;
 }
-
-.block h2{
-    font-size: 20px;
-    margin: 0;
-}
-/* CORREGIR-MEJORAR ESTILO DEL FORMULARIO*/
-.formulario {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    right: 8%;
-    padding: 60px;
-}
-
-.form-group{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.form-group label{
-    margin-bottom: 5px;
-}
-
-.form-group input, 
-.form-group textarea{
-    width: 100%;
-    margin-left: 70%;
-}
-
 
 /*Estilos para btn de "Turnos online*/
 .btn{
@@ -223,15 +188,6 @@ body{
     margin: 40px;
 }
 
-/*    Footer     */
-.contenedor-footer{
-    background-color: #ffffff;
-    display:flex;
-    align-items: center;
-    height: 130px;
-    padding: 5px 10%;
-}
-
 .section-f {
     padding: 5px 10%;
     
@@ -248,18 +204,6 @@ body{
 
 }
 
-.footer-li a{
-    color: #273739;
-    text-decoration: none;
-    margin-right: 40px;
-}
-
-.footer-li{
-    display: inline-block;
-    padding: 15px;
-    color: #273739;
-
-}
 
 /* Esta parte son las 4 imagenes, la idea es poner un titulo y una breve descripcion y en todo caso que te redireccione a otro sitio/pagina */
 .contenedor-imagenes{
@@ -440,11 +384,88 @@ body{
     background-color: rgba(255, 255, 255, 0.753);
     color: rgba(33, 102, 100, 0.753);
 }
-/*  Fin usuario/autogestion  */
+/*  Fin PORTAL  */
+
+/*    Footer     */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.footer-contact i,
+.footer-social i {
+    margin-right: 10px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+}
+
+.footer-social a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a.facebook {
+    color: #0051ff;
+}
+
+.footer-social a.youtube {
+    color: #FF0000;
+}
+
+.footer-social a.instagram {
+    color: #b32252;
+}
+
+.footer-bottom {
+    background-color: #7f8c8d;
+    padding: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
 
 
 
-/*No se si el carrusel de imagenes iria dentro de HEADER o por fuera */
-/* Es buena practica aplicar las tipografias con "*" ? */
-/*Tarda un poco en cargar el sitio. Creo que la calidad de las imagenes es muy alta. Son de "UNSPLASH" Hay otro sitio en donde descargar para recomendarme? */
+/* Agregados para el formulario */
+
+.registro label{
+    font-weight: bold;
+    width:300px ;
+    margin-right: 25px;
+    padding: 5px;
+
+}
+#btnform{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 15px;
+
+}
+#btnform:hover{
+    background-color: #ddf6f2;
+}
+
+
+
+
+
 
