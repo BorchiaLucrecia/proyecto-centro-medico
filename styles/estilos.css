@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Julius+Sans+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
 
-
  /*  Tipografias para todo el documento  */
-body{
+ body{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 430;
     font-style: normal;
     font-variation-settings:"wdth" 100;
-}
+    font-size: 16px;
+    background-color: #ddf6f2;   
 
+}
 /*  Background-color general de todo el sitio  */
 body{
     background-color: #ddf6f2;   
@@ -17,21 +18,21 @@ body{
 
 /*  Header */
 .header{
-    position: fixed;
+    position: absolute;
     background-color: #ffffff;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 130px;
-    width: 80%;
-    padding: 5px 10%;
+    height: 200px;
+    width: 100%;
+    z-index: 1000;
 }
 
 /*Logo en header y en footer*/
-.header .logo-header img,
-.contenedor-footer .logo-footer img {
-    height: 110px;
-    transition: all 0.9s;
+.logo-header img {
+    height: 165px;
+    max-width: 100%;
+    transition: transform 0.9s;
 }
 
 .header .logo-header img:hover,
@@ -64,6 +65,88 @@ body{
 .logo-header img:hover,
 .logo-footer img:hover{
     transform: scale(1.2);
+}
+
+/* esto se debe agregar al CSS general*/
+/**** INSTITUCIONAL ****/
+.blocks-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 185px;
+    margin-bottom: 10%;
+    margin-left: 1%;
+}
+
+.blocks {
+    animation: slideIn 1s ease forwards;
+    max-width: 92%;
+}
+
+.block {
+    display: flex;
+    background-color: #43a19e;
+    padding: 10px;
+    margin-top: 45px;
+    border-radius: 25px;
+}
+
+.block img {
+    width: 35%;
+    height: auto;
+    border-radius: 25px;
+    margin-right: 5%;
+    padding: 15px;
+}
+
+.block p, .formulario {
+    color: #fff;
+    border-radius: 25px;
+    font-size: larger;
+    text-align: justify;
+}
+.block p {
+    flex: 1;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px large;
+    margin-right: 5%;
+    padding: 50px;
+}
+
+.block h2{
+    font-size: 20px;
+    margin: 0;
+}
+/* CORREGIR-MEJORAR ESTILO DEL FORMULARIO*/
+.formulario {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    right: 8%;
+    padding: 60px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group label{
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea{
+    width: 100%;
+    margin-left: 70%;
 }
 
 
@@ -209,6 +292,155 @@ body{
 .float:hover{
     background-color: #27f472;
 }
+.main-usu {
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/salas-de-espera.jpg);
+    background-size: cover; 
+}
+
+.sect-tit {
+    display: flex;
+    flex-direction: row;
+    background-color: #43a19e;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-top: solid #3b8d8a;
+    border-right: solid #3b8d8a;
+    border-left: solid #3b8d8a;
+    margin-top: 5%;
+}
+
+.sect-tit h3{
+    padding: 2%;
+    margin: 4%;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+}
+
+.sect-tit img {
+    width: 10%;
+}
+
+/*Contenedor de formulario y botones*/
+.sect-dat {
+    display: flex;
+    flex-direction: row;
+    background-color: #43a19e;
+    height: 50%;
+    width: 80%;
+    border-left: solid #3b8d8a;
+    border-right: solid #3b8d8a;
+    border-bottom: solid #3b8d8a;
+    margin-bottom: 5%;
+}
+
+/*Formulario*/
+.art-usu {
+    background-color: #43a19e;
+    color: white;
+    height: 100%;
+    width: 50%;
+}
+
+.art-usu form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.art-usu form label {
+    margin-top: 3%;
+    font-size: large;
+}
+
+.art-usu form input {
+    border: 0.2em solid rgba(33, 102, 100, 0.753);
+    width: 90%;
+    height: 2em;
+}
+
+#ingresar {
+    margin-top: 10%;
+    font-size: 120%;
+    width: 91%;
+    padding: 1%;
+    border: 0.15em solid rgba(33, 102, 100, 0.753);
+    background-color: #157DC3;
+    color: white;
+}
+#ingresar:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+    color: rgba(33, 102, 100, 0.753);
+}
+#ingresar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bot-form button{
+    margin-top: 10%;
+    border: none;
+    background-color: #43a19e;
+    color: white;  
+}
+
+.bot-form button:hover {
+    color: #157DC3;
+}
+
+.separador {
+    display: inline-block;
+    width: 2px; 
+    height: 10px; 
+    background-color: #157DC3; 
+    margin: 0 10px; 
+}
+
+.bot-form a{
+    text-decoration: none;
+    color: inherit;
+}
+/*Botones*/
+.boton-usu {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.boton-usu div {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.botonAcci button{
+    margin-top: 15%;
+    font-size: 100%;
+    border: 0.15em solid rgba(33, 102, 100, 0.753);
+    background-color: #157DC3;
+    color: white;
+}
+
+.botonAcci button a{
+    text-decoration: none;
+    color: inherit;
+    padding: 3%;
+}
+
+.botonAcci button:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+    color: rgba(33, 102, 100, 0.753);
+}
+/*  Fin usuario/autogestion  */
 
 
 

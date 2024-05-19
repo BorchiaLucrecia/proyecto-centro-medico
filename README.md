@@ -5,13 +5,14 @@ Aquí encontrarás toda la información relevante sobre nuestro proyecto de siti
 
 *Descripción del Proyecto*
 
-Este proyecto forma parte de la primera etapa del curso. Consiste en el desarrollo de un sitio web de gestión médica la cual estará compuesta por cuatro secciones principales (4 páginas html). Además, se incluirá un formulario de contacto para facilitar la comunicación con los usuarios. El diseño será completamente responsive, adaptándose a tres tamaños de dispositivos distintos: PC escritorio, Tables, Celular.
+Este proyecto forma parte de la primera etapa del curso. Consiste en el desarrollo de un sitio web de gestión médica la cual estará compuesta por cuatro secciones principales (4 páginas html). El diseño será completamente responsive, adaptándose a tres tamaños de dispositivos distintos: PC escritorio, Tables, Celular.
 
-*Funcionalidades principales*
+*Secciones*
 
-  1. Solicitud de turnos online: Los usuarios podrán solicitar turnos médicos de manera online, agilizando el proceso de reserva.
-  2. Información institucional: Presentaremos el perfil de los profesionales que trabajan en la clínica, incluyendo su especialidad y experiencia.
-  3. Autogestion de pacientes: Los usuarios podrán realizar diversas acciones de autogestión, como buscar resultados de exámenes/laboratorios, sacar turnos y visualizar su perfil personal.
+  1. INICIO 
+  2. INSTITUCIONAL
+  3. PORTAL
+  4. TURNOS ONLINE
 
 *Tecnologías utilizadas*
 
@@ -27,11 +28,6 @@ Este proyecto forma parte de la primera etapa del curso. Consiste en el desarrol
 
 Este proyecto está siendo desarrollado por un equipo de colaboradores comprometidos con la creación de una plataforma intuitiva y funcional para la gestión médica.
 * [Leila Lucrecia Borchia](https://github.com/BorchiaLucrecia)
-* [Juan Patricio](https://github.com/juampilogico)
-* [Martin Laurato Velasco](https://github.com/MartinV-Do3)
-* [4to colaborador](https://github.com/matula77)
-
-*Contacto*
-
-Para cualquier consulta o comentario, puedes comunicarte a traves de nuestros perfiles de GitHub.
-
+* [Juan Patricio Garcia](https://github.com/juampilogico)
+* [Martin Lautaro Velasco](https://github.com/MartinV-Do3)
+* [Miguel Ángel Tula](https://github.com/matula77)
