@@ -131,7 +131,9 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
+    right: 8%;
+    padding: 60px;
 }
 
 .block p {
@@ -140,6 +142,7 @@ body{
     border-radius: 25px;
     font-size: 16px large;
     margin-right: 5%;
+    padding: 50px;
 }
 
 .block h2{
